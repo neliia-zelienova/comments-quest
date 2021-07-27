@@ -1,0 +1,94 @@
+.pagination__container {
+  position: relative;
+  font-family: 'Baloo Chettan 2', cursive;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+
+  & button {
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(64, 137, 233);
+    transition: all ease 500ms;
+
+    &:hover,
+    &:focus {
+      box-shadow: 4px 4px 8px 0px rgba(64, 137, 233, 0.8);
+    }
+  }
+}
+
+.pagination__list {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Baloo Chettan 2', cursive;
+  display: flex;
+  align-items: baseline;
+  margin-right: 30px;
+  & li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(64, 137, 233, 0.8);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color ease 500ms;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba(64, 137, 233, 0.2);
+    }
+  }
+
+  .current {
+    border-width: 3px;
+    border-radius: 15px;
+    font-weight: 600;
+  }
+}
+
+.start__btn {
+  background: url(../../img/free-icon-rewind-option-70229.svg) 30% 50%/80%
+    no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 32%;
+}
+
+.prev__btn {
+  background: url(../../img/free-icon-triangular-arrow-facing-left-21256.svg)
+    30% 50%/80% no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 37%;
+}
+
+.next__btn {
+  background: url(../../img/free-icon-triangular-arrow-facing-right.svg) 70% 50%/80%
+    no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+}
+
+.end__btn {
+  background: url(../../img/free-icon-remote-control-fast-forward-button-70082.svg)
+    70% 50%/80% no-repeat;
+  position: absolute;
+  top: 0%;
+  left: 65%;
+}

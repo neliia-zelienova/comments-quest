@@ -1,0 +1,32 @@
+.comments__container {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    color: rgb(64, 137, 233);
+    margin-bottom: 20px;
+  }
+
+  & ul {
+    width: 100%;
+  }
+}
+.load__more__btn {
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  background-color: rgb(64, 137, 233);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 14px;
+  transition: all ease 500ms;
+
+  &:hover,
+  &:focus {
+    box-shadow: 4px 4px 8px 0px rgba(64, 137, 233, 0.8);
+  }
+}
