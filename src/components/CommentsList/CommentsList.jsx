@@ -4,7 +4,7 @@ import Pagination from '../Pagination';
 import styles from './CommentsList.module.scss';
 import utils from '../../utils/ApiServices';
 
-const CommnetsList = () => {
+const CommentsList = () => {
   const [comments, setComments] = useState([]);
   const [page, setPage] = useState(1);
   const [lastPage, setLastPage] = useState();
@@ -38,7 +38,7 @@ const CommnetsList = () => {
   return (
     <>
       <div className={styles.comments__container}>
-        <h2 className>Previous comments</h2>
+        <h2>Previous comments</h2>
         <ul>
           {comments?.map(item => (
             <CommentItem
@@ -59,4 +59,4 @@ const CommnetsList = () => {
     </>
   );
 };
-export default CommnetsList;
+export default CommentsList;
